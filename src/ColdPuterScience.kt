@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
     val n = readLine()!!.toInt()
-    val x = readInts(' ')
+    val x = readLine()!!.split(' ').map(String::toInt)
     var c = 0
     for (i in 1..n) {
         when {
@@ -8,10 +8,8 @@ fun main(args: Array<String>) {
         }
     }
     print(c)
-
 }
 
-fun readInts(separator: Char = ' ') =
-        readLine()!!.split(separator).map(String::toInt)
+
 
 
